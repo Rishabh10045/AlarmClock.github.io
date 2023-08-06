@@ -1,0 +1,103 @@
+body{
+    background-image: url(./images/main-bg.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover ;
+
+}
+#title{
+    text-align: left;
+    margin: 20px;
+}
+#alarm-clock{
+    border : 5px solid red;
+    height: 85vh;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 5%;
+    text-align: center;
+    color: white;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    /* background-color: purple; */
+    /* background-image: url(./images/background.png); */
+
+}
+hr{
+    border-color: blue;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+input{
+    width:15%;     
+}
+select{
+    height: 70%;
+}
+
+#addAlarm{
+    margin: 10%;
+    margin-left:10%;
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    color: white;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px w;
+}
+.input-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* alarm list css */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #e5e5e5; */
+  }
+  ul li {
+    padding: 10px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width: 90%;
+    margin-left: 15px;
+    /* padding-left: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+    color: black;
+    background: whitesmoke;
+    border: 2px solid rgb(108, 171, 123);
+    border-radius: 10px ;
+    box-shadow: 1px;
+
+  }
+  ul li:hover {
+    background: greenyellow;
+  }
+ 
+  
+  #list label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+ 
+  #delete {
+    height: 28px;
+      padding: 5px 0px;
+      border-radius: 3px;
+  }
+  #delete:hover {
+    background: #f2f2f2;
+    cursor: pointer;
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="data:," />
+    <link rel = "stylesheet" href="style.css">
+
+</head>
+<body>
+      <div id = "alarm-clock">
+        <h1 id ="title">Alarm Clock</h1>
+        <hr>
+        <div id="clock">
+            <h1 id="date-time"></h1>
+          </div>
+          <hr>
+          <div class = "input-container">
+            <div id = "set-time">
+                <!-- <input type="date"> -->
+                <!-- <label for="set-time">HH:MM:SS &nbsp&nbsp AM/PM</label><hr> -->
+                <input type ='number' id = 'hours' min = 0 max = 12 maxlength="2" required placeholder='HH'><span>&nbsp:</span>
+                <input type ='number' id = 'minutes' min =0 max = 59 maxlength="2" required placeholder="MM"><span>&nbsp:</span>
+                <input type ='number' id = 'seconds' min =0 max = 59 maxlength="2" required placeholder="SS"><span>&nbsp&nbsp</span>
+                <select name="ampm" id = 'ampm'>
+                    <option selected>AM</option>
+                    <option>PM</option>
+                </select>
+              </div>
+              <div>
+                <button type ='submit' id = 'addAlarm'>Set Alarm</button>
+              </div>
+              
+          </div>
+          <hr>
+          <div>
+            <span id="total-alarms">Total Alarm Set: <span id="alarm-counter">0</span></span>
+            <ul id="list">
+            <!-- <li>
+              
+            </li> -->
+        
+          </ul>
+          </div>
+    
+        
+      </div>
+      <script type="text/javascript" src ="index.js"></script>
+</body>
+</html>
